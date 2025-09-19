@@ -45,10 +45,6 @@ app.get("/", async (req, res) => {
     const linksHtml = Object.entries(links)
       .map(([shortCode, url], index) => {
         return `
-    <p>
-      <a href="/${shortCode}" target="_blank">${const linksHtml = Object.entries(links)
-  .map(([shortCode, url], index) => {
-    return `
       <div class="link-item">
         <span class="short-url">
           <a href="/${shortCode}" target="_blank">${req.headers.host}/${shortCode}</a>
@@ -59,14 +55,6 @@ app.get("/", async (req, res) => {
         </span>
       </div>
     `;
-  })
-  .join("");
-
-          req.headers.host
-        }/${shortCode}</a>
-      &nbsp; - &nbsp; ${url}
-    </p>
-  `;
       })
       .join("");
 
