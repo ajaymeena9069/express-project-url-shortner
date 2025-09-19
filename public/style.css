@@ -79,3 +79,36 @@ h1 {
   color: #333;
   text-align: center;
 }
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 0.9rem;
+}
+
+.short-url a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.short-url a:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.long-url a {
+  color: #333;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.long-url a:hover {
+  text-decoration: underline;
+}
